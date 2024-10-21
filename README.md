@@ -1,6 +1,47 @@
-# Getting Started with Create React App
+# Places Search Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a React application that allows users to search for places using a search box. It utilizes the GeoDB API to fetch city data based on user input and displays the results in a responsive data table with pagination.
+
+## Table of Contents
+
+- [Getting Started](#getting-started)
+- [Features](#features)
+- [Available Scripts](#available-scripts)
+- [Usage](#usage)
+- [Learn More](#learn-more)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Getting Started
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). To get started with the application, follow these steps:
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/raashidkhan/solvative-task.git
+   ```
+
+2. Install the dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+
+   ```bash
+   npm start
+   ```
+
+4. Open [http://localhost:3000](http://localhost:3000) in your browser to view the application.
+
+## Features
+
+- **Search Functionality**: Users can search for places using a search box with debounce functionality to optimize API calls.
+- **Responsive Data Table**: Displays search results in a table format that adapts to different screen sizes.
+- **Pagination**: Users can navigate through pages of results, with a default of three items displayed per page.
+- **Error Handling**: Displays loading indicators and error messages when fetching data.
 
 ## Available Scripts
 
@@ -8,36 +49,18 @@ In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Runs the app in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Builds the app for production to the `build` folder. It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Usage
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+1. Enter a city name or prefix in the search box.
+2. The application will fetch and display matching results in a data table.
+3. Use the pagination controls to navigate through the results.
+4. Adjust the number of items displayed per page using the input field.
 
 ## Learn More
 
@@ -45,26 +68,10 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Contributions are welcome! If you have suggestions for improvements or features, feel free to open an issue or submit a pull request.
 
-### Analyzing the Bundle Size
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
